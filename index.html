@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230213231250">
+    <link rel="shortcut icon" href="img/icons/logo.ico">
+    <title>Rezon</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header.html -->
+        <!-- !!! БАЗОВЫЙ HEADER С БУРГЕРОМ -->
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__block">
+            <a href="" class="header__block-logo">
+                <svg class="sprite-icon__logo">
+                    <use href="img/icons/icons.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="header__menu menu">
+                <!-- обернуть доп блоком, чтобы можно было кнопки с медиа поместить -->
+                <div class="menu__block">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li data-goto=".main__aboutserv" class="menu__item"><a href="#" class="menu__link bem__link-hover">О сервисе</a></li>
+                            <li data-goto=".main__services" class="menu__item"><a href="#" class="menu__link bem__link-hover">Услуги</a></li>
+                            <li data-goto=".main__scheme" class="menu__item"><a href="#" class="menu__link bem__link-hover">Схема работы</a></li>
+                            <li data-goto=".main__rates" class="menu__item"><a href="#" class="menu__link bem__link-hover">Тарифы</a></li>
+                            <li data-goto=".main__team" class="menu__item"><a href="#" class="menu__link bem__link-hover">Команда</a></li>
+                            <li data-goto=".main__map" class="menu__item"><a href="#" class="menu__link bem__link-hover">Зона покрытия</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu__socials">
+                        <a href="" class="menu__social">
+                            <svg class="sprite-icon__facebook_burger">
+                                <use href="img/icons/icons.svg#facebook_burger"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="menu__social">
+                            <svg class="sprite-icon__vk_burger">
+                                <use href="img/icons/icons.svg#vk_burger"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="menu__social">
+                            <svg class="sprite-icon__instagram_burger">
+                                <use href="img/icons/icons.svg#instagram_burger"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- ? BURGER для внутреннего блока -->
+                    <!-- Контейнеру добавлять active -->
+                    <div class="header__burger-container active-burger">
+                        <button class="header__burger-button">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__block-contact head-contact">
+                <a href="tel:88888888888" class="head-contact__icon">
+                    <svg class="sprite-icon__phone">
+                        <use href="img/icons/icons.svg#phone"></use>
+                    </svg>
+                </a>
+                <a href="tel:88888888888" class="head-contact__phone bem__link-hover">+7 (456) 567-89-89</a>
+            </div>
+            
+            <!-- ? BURGER для изначального блока -->
+            <!-- Контейнеру добавлять active -->
+            <div class="header__burger-container inactive-burger">
+                <button class="header__burger-button">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="main">
+            <section class="banner">
+    <div class="banner__container">
+        <div class="banner__block">
+            <div class="banner__block-img">
+                <picture><source srcset="img/main/banner/banner_huge.webp" type="image/webp"><img src="img/main/banner/banner_huge.png" alt=""></picture>
+            </div>
+            <div class="banner__block-info banner-info">
+                <h1 class="banner-info__title">Скидка до<br> 1 000 000 руб.</h1>
+                <p class="banner-info__subtitle"><span>Пользователям</span> сервиса предоставляется скидка <span>на покупку</span> недвижимости</p>
+                <a href="#popup__callback" class="banner-info__button bem__button-blue popup__link">Зарегистрироваться</a>
+            </div>
+            <div class="banner__block-fixed banner-fixed">
+                <div class="banner-fixed__img">
+                    <picture><source srcset="img/main/banner/banner_small.webp" type="image/webp"><img src="img/main/banner/banner_small.png" alt=""></picture>
+                </div>
+                <div class="banner-fixed__info fixed-info">
+                    <h2 class="fixed-info__title">Наш сервис - бесплатно</h2>
+                    <p class="fixed-info__text">
+                        Подписавшимся на наши<br> аккаунты и получи бесплатный доступ к сервису на 3 дня
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__aboutserv">
+    <div class="aboutserv__container">
+        <div class="aboutserv__block">
+            <h2 class="aboutserv__block-title bem__common-title">О сервисе</h2>
+            <div class="aboutserv__block-columns">
+                <div class="aboutserv__block-column aboutserv-column">
+                    <h3 class="aboutserv-column__title">От простых моментов до апартаментов!</h3>
+                    <p class="aboutserv-column__text">
+                        «TurkService» предоставляет полный спектр услуг для комфортного пребывания в Турции. Ваш надежный помощник всегда под рукой!
+                    </p>
+                    <div class="aboutserv-column__circles">
+                        <div class="aboutserv-column__circle">Просто</div>
+                        <div class="aboutserv-column__circle">Выгодно</div>
+                        <div class="aboutserv-column__circle">Полезно</div>
+                    </div>
+                </div>
+                <div class="aboutserv__block-column aboutserv-column">
+                    <div class="aboutserv-column__img">
+                        <picture><source srcset="img/main/aboutserv/image.webp" type="image/webp"><img src="img/main/aboutserv/image.png" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__services">
+    <div class="services__container">
+        <div class="services__block">
+            <h2 class="services__block-title bem__common-title">Услуги</h2>
+            <div class="services__block-top services__block-cards">
+                <div class="services__block-card">
+                    <p>Услуги Турагентства</p>
+                </div>
+                <div class="services__block-card">
+                    <p>Услуги <br>трансфера</p>
+                </div>
+                <div class="services__block-card"> 
+                    <p>Организация досуга</p>
+                </div>
+                <div class="services__block-card">
+                    <p>Что? Где? <br>Почем?</p>
+                </div>
+            </div>
+            <div class="services__block-logo">
+                <div class="services__logo-cnt">
+                    <svg class="sprite-icon__services_logo">
+                        <use href="img/icons/icons.svg#services_logo"></use>
+                    </svg>
+                </div>
+                <p>От простых моментов до апартаментов!</p>
+            </div>
+            <div class="services__block-bottom services__block-cards">
+                <div class="services__block-card">
+                    <p>Услуги переводчика</p>
+                </div>
+                <div class="services__block-card">
+                    <p>Открытие <br>счета</p>
+                </div>
+                <div class="services__block-card">
+                    <p>Получение ВНЖ <br>и гражданства</p>
+                </div>
+                <div class="services__block-card">
+                    <p>Покупка, продажа <br>и аренда </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__scheme">
+    <div class="scheme__container">
+        <div class="scheme__block">
+            <h2 class="scheme__block-title bem__common-title">Схема работы</h2>
+            <div class="scheme__block-line scheme-line">
+                <div class="scheme-line__vector">
+                    <svg class="sprite-icon__scheme_line">
+                        <use href="img/icons/icons.svg#scheme_line"></use>
+                    </svg>
+                    <div class="scheme-line__point"><!-- 2 --></div>
+                    <div class="scheme-line__point"><!-- 3 --></div>
+                    <div class="scheme-line__point"><!-- 4 --></div>
+                </div>
+            </div>
+            <div class="scheme__block-columns">
+                <div class="scheme__block-column">
+                    <span>Регистрируетесь</span>
+                    <p>«TurkService» предоставляет полный доступ ко всем услугам</p>
+                </div>
+                <div class="scheme__block-column">
+                    <span>Оплачиваете</span>
+                    <p>После оплаты выбранной услуги «TurkService» предоставляет бессрочное пользование</p>
+                </div>
+                <div class="scheme__block-column">
+                    <span>Наслаждаетесь</span>
+                    <p>«TurkService» остается только пожелать вам приятного пользования!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__rates">
+    <div class="rates__container">
+        <div class="rates__block">
+            <h2 class="rates__block-title bem__common-title">Тарифы</h2>
+            <div class="rates__block-cards">
+                <div class="rates__block-card rates-card">
+                    <div class="rates-card__backblock">
+                        <picture><source srcset="img/main/rates/background.webp" type="image/webp"><img src="img/main/rates/background.png" alt=""></picture>
+                    </div>
+                    <div class="rates-card__content">
+                        <span class="rates-card__rate">Минимальный</span>
+                        <p class="rates-card__text">Использование сервиса в течение 1 календарного дня</p>
+                        <div class="rates-card__price no-discount">
+                            <span class="rates-card__price-discount"></span>
+                            <br>
+                            <span class="rates-card__price-current">99 руб.</span>
+                        </div>
+                    </div>
+                    <a href="#popup__callback" class="rates-card__button bem__button-blue popup__link">Присоединиться</a>
+                </div>
+                <div class="rates__block-card rates-card">
+                    <div class="rates-card__backblock">
+                        <picture><source srcset="img/main/rates/background.webp" type="image/webp"><img src="img/main/rates/background.png" alt=""></picture>
+                    </div>
+                    <div class="rates-card__content">
+                        <span class="rates-card__rate">Средний</span>
+                        <p class="rates-card__text">Использование сервиса в течение 7 календарных дней</p>
+                        <div class="rates-card__price">
+                            <span class="rates-card__price-discount">693 руб.</span>
+                            <br>
+                            <span class="rates-card__price-current">500 руб.</span>
+                        </div>
+                    </div>
+                    <a href="#popup__callback" class="rates-card__button bem__button-blue popup__link">Присоединиться</a>
+                </div>
+                <div class="rates__block-card rates-card">
+                    <div class="rates-card__backblock">
+                        <picture><source srcset="img/main/rates/background.webp" type="image/webp"><img src="img/main/rates/background.png" alt=""></picture>
+                    </div>
+                    <div class="rates-card__content">
+                        <span class="rates-card__rate">Полный</span>
+                        <p class="rates-card__text">Иcпользование сервиса не менее 30 календарных дней</p>
+                        <div class="rates-card__price">
+                            <span class="rates-card__price-discount">693 руб. </span>
+                            <br>
+                            <span class="rates-card__price-current">500 руб.</span>
+                        </div>
+                    </div>
+                    <a href="#popup__callback" class="rates-card__button bem__button-blue popup__link">Присоединиться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__client">
+    <div class="main__client-background">
+        <picture><source srcset="img/main/client/background_group.webp" type="image/webp"><img src="img/main/client/background_group.png" alt=""></picture>
+    </div>
+    <div class="client__container">
+        <div class="client__block">
+            <div class="client__block-content client-content">
+                <h2 class="client-content__title">Готовы стать нашим клиентом?</h2>
+                <p class="client-content__text">Заполняя форму, Вы подтверждаете свое согласие на обработку персональных данных</p>
+                <a href="#popup__callback" class="client-content__button bem__button-blue popup__link">Присоединиться</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__team">
+    <div class="team__container">
+        <div class="team__block">
+            <h2 class="team__block-title bem__common-title">Команда</h2>
+            <div class="team__block-teammates teammates">
+                <div class="teammates-swiper__small swiper">
+                    <div class="swiper-wrapper teammates-swiper__small-wrapper">
+
+                        <div class="teammates-swiper__small-item swiper-slide">
+                            <div class="swiper__small-item-logo">
+                                <picture><source srcset="img/main/team/1.webp" type="image/webp"><img src="img/main/team/1.png" alt=""></picture>
+                            </div>
+                             <div class="swiper__small-item-info">
+                                <b class="swiper__small-item-info-name">Алина Баранова</b>
+                                <p class="swiper__small-item-info-duty">
+                                    <span>Должность:</span> руководитель отдела рекламы
+                                </p>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__small-item swiper-slide">
+                            <div class="swiper__small-item-logo">
+                                <picture><source srcset="img/main/team/2.webp" type="image/webp"><img src="img/main/team/2.png" alt=""></picture>
+                            </div>
+                             <div class="swiper__small-item-info">
+                                <b class="swiper__small-item-info-name">Викторя Боня</b>
+                                <p class="swiper__small-item-info-duty">
+                                    <span>Должность:</span> старший специалист по консультации
+                                </p>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__small-item swiper-slide">
+                            <div class="swiper__small-item-logo">
+                                <picture><source srcset="img/main/team/3.webp" type="image/webp"><img src="img/main/team/3.png" alt=""></picture>
+                            </div>
+                             <div class="swiper__small-item-info">
+                                <b class="swiper__small-item-info-name">Александр Шиф</b>
+                                <p class="swiper__small-item-info-duty">
+                                    <span>Должность:</span> генеральный директор
+                                </p>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__small-item swiper-slide">
+                            <div class="swiper__small-item-logo">
+                                <picture><source srcset="img/main/team/4.webp" type="image/webp"><img src="img/main/team/4.png" alt=""></picture>
+                            </div>
+                             <div class="swiper__small-item-info">
+                                <b class="swiper__small-item-info-name">Виктор Сизин</b>
+                                <p class="swiper__small-item-info-duty">
+                                    <span>Должность:</span> бизнес тренер
+                                </p>
+                             </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="teammates-swiper__main swiper">
+                    <div class="swiper-wrapper teammates-swiper__main-wrapper">
+                        <div class="teammates-swiper__main-item swiper-slide">
+                            <div class="swiper__main-item-logo">
+                                <picture><source srcset="img/main/team/1.webp" type="image/webp"><img src="img/main/team/1.png" alt=""></picture>
+                            </div>
+                            <div class="swiper__main-item-info">
+                                <b class="swiper__main-item-info-name">Алина Баранова</b>
+                                <p class="swiper__main-item-info-duty">
+                                    <span>Должность:</span> руководитель отдела рекламы
+                                </p>
+                                <div class="swiper__main-item-info-biography">
+                                    Место рождения: г. Москва, 7 лет прожила в Израиле, закончила МГУ по специальности "Маркетолог"
+                                </div>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__main-item swiper-slide">
+                            <div class="swiper__main-item-logo">
+                                <picture><source srcset="img/main/team/2.webp" type="image/webp"><img src="img/main/team/2.png" alt=""></picture>
+                            </div>
+                            <div class="swiper__main-item-info">
+                                <b class="swiper__main-item-info-name">Виктория Боня</b>
+                                <p class="swiper__main-item-info-duty">
+                                    <span>Должность:</span> старший специалист по консультации
+                                </p>
+                                <div class="swiper__main-item-info-biography">
+                                    Место рождения: г. Санкт Петербург, 7 лет прожила в Израиле, закончила МГИМО по специальности «Юрист»
+                                </div>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__main-item swiper-slide">
+                            <div class="swiper__main-item-logo">
+                                <picture><source srcset="img/main/team/3.webp" type="image/webp"><img src="img/main/team/3.png" alt=""></picture>
+                            </div>
+                            <div class="swiper__main-item-info">
+                                <b class="swiper__main-item-info-name">Александр Шиф</b>
+                                <p class="swiper__main-item-info-duty">
+                                    <span>Должность:</span> генеральный директор
+                                </p>
+                                <div class="swiper__main-item-info-biography">
+                                    Место рождения: г. Санкт Петербург, 7 лет прожил в Израиле, закончил Санкт-Петербургский Государственный Университет по специальности «Юрист»
+                                </div>
+                             </div>
+                        </div>
+                        <div class="teammates-swiper__main-item swiper-slide">
+                            <div class="swiper__main-item-logo">
+                                <picture><source srcset="img/main/team/4.webp" type="image/webp"><img src="img/main/team/4.png" alt=""></picture>
+                            </div>
+                            <div class="swiper__main-item-info">
+                                <b class="swiper__main-item-info-name">Виктор Сизин</b>
+                                <p class="swiper__main-item-info-duty">
+                                    <span>Должность:</span> бизнес тренер
+                                </p>
+                                <div class="swiper__main-item-info-biography">
+                                    Место рождения: г. Санкт Петербург, 7 лет прожил в Израиле, закончил Санкт-Петербургский Государственный Университет по специальности «Юрист»
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="teammates-swiper__main-arrows">
+                        <div class="teammates-swiper__main-arrow teammates-slider__prev"><img src="img/main/team/arrow.svg" alt=""></div>
+                        <div class="teammates-swiper__main-arrow teammates-slider__next"><img src="img/main/team/arrow.svg" alt=""></div>
+                        <!-- Пагинация-фракция слайдов -->
+                        <div class="teammates-swiper__main-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__questions">
+    <div class="main__questions-background">
+        <picture><source srcset="img/main/questions/background.webp" type="image/webp"><img src="img/main/questions/background.png" alt=""></picture>
+    </div>
+    <div class="questions__container">
+        <div class="questions__block">
+            <div class="questions__block-content questions-content">
+                <h2 class="questions-content__title">Появились вопросы?</h2>
+                <p class="questions-content__text">
+                    Напишите прямо сейчас и получите бесплатную и подробную информацию о нашем сервисе!
+                </p>
+            </div>
+            <div class="questions__block-form questions-form">
+                <form action="" class="questions-form__block">
+                    <div class="questions-form__block-inputs">
+                        <input required type="email" name="email" placeholder="E-mail" class="questions-form__block-input">
+                        <input required type="tel" name="user_phone" placeholder="Телефон" class="questions-form__block-input">
+                    </div>
+                    <a href="#popup__success" type="submit" class="questions-form__button bem__button-blue popup__link">Перезвонить</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main__map">
+    <div class="map__container">
+        <div class="map__block">
+            <h2 class="map__block-title bem__common-title">Зона покрытия</h2>
+        </div>
+    </div>
+    <div class="map__cnt">
+        <picture><source srcset="img/main/map/map.webp" type="image/webp"><img src="img/main/map/map.png" alt=""></picture>
+    </div>
+</section>
+
+<!-- POPUPS -->
+<div id="popup__callback" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <h2 class="popup__content-title">Свяжитесь со мной</h2>
+            <form action="" class="popup__content-form popup-form">
+                <input required type="text" name="user_name" placeholder="Имя" class="popup-form__input">
+                <input required type="tel" name="user_phone" placeholder="Телефон" class="popup-form__input">
+                <a href="#popup__success" type="submit" class="popup-form__button bem__button-blue popup__link">Присоединиться</a>
+                <div class="popup-form__checkbox">
+                    <input checked id="agreement" type="checkbox" name="agreement" value="">
+                    <label for="agreement" class="custom-checkbox">
+                        <img src="img/main/popups/checkbox.svg" alt="checkbox">
+                    </label>
+                    <p>заполняя форму заявки Вы соглашаетесь с политикой обработки персональных данных</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="popup__success" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <h2 class="popup__content-title success-title">Ваше заявка отправлена, мы свяжемся с Вами в ближайшее время</h2>
+        </div>
+    </div>
+</div>
+        </main>
+
+        <button class="navigation-top__button"><img src="img/arrow.svg" alt=""></button>
+        <!-- footer.html -->
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__block">
+            <div class="footer__column foot-form">
+                <a href="" class="footer__block-logo">
+                    <svg class="sprite-icon__logo">
+                        <use href="img/icons/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <p class="foot-form__intro">Что бы быть в курсе акций</p>
+                <form action="#" class="foot-form__block">
+                    <input required type="email" name="email" placeholder="E-mail" class="foot-form__input">
+                    <input required type="tel" name="user_phone" placeholder="Телефон" class="foot-form__input">
+                    <a href="#popup__success" type="submit" class="foot-form__button bem__button-blue popup__link">Подписаться</a>
+                </form>
+            </div>
+            <div class="footer__column foot-nav">
+                <h2 class="foot-nav__title common-footer__title">Полезное</h2>
+                <nav class="foot-nav__body">
+                    <ul class="foot-nav__list">
+                        <li data-goto=".main__aboutserv" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">О сервисе</a></li>
+                        <li data-goto=".main__services" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Услуги</a></li>
+                        <li data-goto=".main__scheme" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Схема работы</a></li>
+                        <li data-goto=".main__rates" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Тарифы</a></li>
+                        <li data-goto=".main__team" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Команда</a></li>
+                        <li data-goto=".main__map" class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Зона покрытия</a></li>
+                        <li class="foot-nav__item"><a href="#" class="foot-nav__link bem__link-hover">Политика конфиденциальности</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__column foot-contacts">
+                <h2 class="foot-contacts__title common-footer__title">Наши контактные данные</h2>
+                <div class="foot-contacts__block">
+                    <div class="foot-contacts__personal foot-pers">
+                        <p class="foot-pers__time">Время работы: 08:00 - 20:00</p>
+                        <p class="foot-pers__phone">Телефон: <a href="tel:88888888888" class="bem__link-hover">+7 (456) 567-89-89</a></p>
+                    </div>
+                    <div class="foot-contacts__social foot-social">
+                        <p class="foot-social__intro">Мы в соц. сетях</p>
+                        <div class="foot-social__icons">
+                            <a href="" class="foot-social__icon">
+                                <svg class="sprite-icon__facebook_footer">
+                                    <use href="img/icons/icons.svg#facebook_footer"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="foot-social__icon">
+                                <svg class="sprite-icon__instagram_footer">
+                                    <use href="img/icons/icons.svg#instagram_footer"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="foot-social__icon">
+                                <svg class="sprite-icon__telegram_footer">
+                                    <use href="img/icons/icons.svg#telegram_footer"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="foot-social__icon">
+                                <svg class="sprite-icon__tiktok_footer">
+                                    <use href="img/icons/icons.svg#tiktok_footer"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="foot-social__icon">
+                                <svg class="sprite-icon__youtube_footer">
+                                    <use href="img/icons/icons.svg#youtube_footer"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/app.min.js?_v=20230213231250"></script>
+</body>
+
+</html>
